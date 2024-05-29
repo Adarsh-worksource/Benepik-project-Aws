@@ -3,7 +3,7 @@ Create a secret in AWS Secrets Manager: Log in to your AWS Management Console, n
 Define the necessary keys (db_username, db_password, db_url) within the secret. You can either manually input these values or generate them programmatically.
 Spring Boot Application:
 
-Initialize a Spring Boot project: You can use Spring Initializr (https://start.spring.io/) to generate a new Spring Boot project with Maven/Gradle setup.
+Initialize a Spring Boot project: You can use Spring Initializr  to generate a new Spring Boot project with Maven/Gradle setup.
 Configure the project to connect to a relational database: Use Spring Data JPA or Spring JDBC to connect to your preferred database (e.g., MySQL). Configure the data source to obtain credentials from AWS Secrets Manager.
 Fetch and use credentials from AWS Secrets Manager during startup: Utilize the AWS SDK for Java within your Spring Boot application to interact with AWS Secrets Manager and retrieve the credentials during application initialization.
 Automatic Credential Update:
